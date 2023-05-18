@@ -10,6 +10,7 @@ from torchtext.datasets import WikiText103
 from tqdm import tqdm
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
+nlp = spacy.load('en_core_web_sm')
 
 def set_hooks_gpt2(model):
     """
